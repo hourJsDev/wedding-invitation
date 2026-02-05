@@ -10,7 +10,11 @@
   scroll-behavior: smooth;
 }
 body {
-  background: #f5f5f5;
+  background: url("../src/assets/bg.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100dvh;
+  overflow: hidden;
 }
 .custom-font {
   font-family: sans-serif !important;
@@ -183,7 +187,8 @@ body {
   width: var(--bubble-radius);
   height: var(--bubble-radius);
   border-radius: 50%;
-  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay)
+    ease-in infinite;
 }
 .bubble::before {
   position: absolute;
@@ -194,7 +199,8 @@ body {
   height: 100%;
   background: rgba(255, 255, 255, 0.3);
   border-radius: inherit;
-  animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+  animation: var(--bubble-sway-type) var(--bubble-sway-duration)
+    var(--bubble-sway-delay) ease-in-out alternate infinite;
 }
 .bubble:nth-child(0) {
   --bubble-left-offset: 34vw;
@@ -747,11 +753,19 @@ body {
 .text-shine {
   color: #0000;
   text-shadow: 0 2px 4px #0000001a;
-  background: linear-gradient(90deg, #d7bb83, #f3e5ab, #fff, #f3e5ab, #d7bb83) 0 0 / 200%;
+  background: linear-gradient(90deg, #d7bb83, #f3e5ab, #fff, #f3e5ab, #d7bb83) 0
+    0 / 200%;
   -webkit-background-clip: text;
   background-clip: text;
   animation: 4s linear infinite shine;
 }
 .text-gold-light {
   color: #fad6a5;
+}
+
+.main1 {
+  background: url("../src/assets/Main2.jpg");
+}
+.main2 {
+  background: url("../src/assets/Main1.jpg");
 }
