@@ -10,10 +10,11 @@
   scroll-behavior: smooth;
 }
 body {
-  background: url("../src/assets/bg.webp");
+  background: url("../src/assets/bg.jpg");
   background-size: cover;
   background-position: center;
-  height: 100dvh;
+}
+#root {
   overflow: hidden;
 }
 .custom-font {
