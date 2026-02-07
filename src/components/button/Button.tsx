@@ -1,5 +1,4 @@
-import React from "react";
-import { MailOpen, TypeIcon } from "lucide-react";
+import { MailOpen } from "lucide-react";
 const Button = ({ text, onClick }: { text?: string; onClick?: () => void }) => {
   return (
     <button
