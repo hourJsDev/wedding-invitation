@@ -28,6 +28,7 @@ import outfit52 from "../../assets/outfits/5/2.jpg";
 import outfit53 from "../../assets/outfits/5/3.jpg";
 import outfit54 from "../../assets/outfits/5/4.jpg";
 import outfit55 from "../../assets/outfits/5/5.jpg";
+import ImageSkeleton from "../skeleton/ImageSkeleton";
 
 const Gallery = () => {
   const [open, setOpen] = useState(0);
@@ -43,7 +44,9 @@ const Gallery = () => {
   };
   return (
     <div className="mt-[20px] ">
-      <div>កំរងរូបភាពអាពាហ៍ពិពាហ៍របស់យើង</div>
+      <div className="text-[#295e97] text-[18px]">
+        កំរងរូបភាពអាពាហ៍ពិពាហ៍របស់យើង
+      </div>
       <div className="w-[150px] mt-[10px] mx-auto">
         <Image src={decorLine} className="" />
       </div>
@@ -65,13 +68,16 @@ const Gallery = () => {
       <Sheet open={open > 0} onOpenChange={() => setOpen(0)}>
         <SheetContent className="w-full overflow-auto">
           <SheetHeader>
-            <p>ឈុតទី​ {open}</p>
+            <p className="text-lg">ឈុតទី​ {open}</p>
+            <div className="w-[150px] mt-[10px] mx-auto">
+              <Image src={decorLine} className="" />
+            </div>
           </SheetHeader>
           <div className="grid grid-cols-1 mt-[20px] gap-[10px]">
             {!!outfits[open - 1] &&
               outfits[open - 1].map((outfit) => (
                 <div className="rounded-[10px] relative overflow-hidden">
-                  <Image src={outfit} />
+                  <ImageSkeleton src={outfit} />
                 </div>
               ))}
           </div>

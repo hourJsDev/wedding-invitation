@@ -1,5 +1,7 @@
 import { Calendar, MapPin } from "lucide-react";
 import decorLine from "../../assets/decor-line.png";
+import aba from "../../assets/aba.jpg";
+import location from "../../assets/location.jpg";
 import waiting from "../../assets/waiting.png";
 import Image from "../image/Image";
 import Countdown from "../time/Countdown";
@@ -77,34 +79,88 @@ const Step2 = () => {
             >
               សិរីមង្គលអាពាហ៍ពិពាហ៍
             </p>
-            <div className="flex flex-col items-center">
-              <p
-                data-aos="fade-up"
-                data-aos-delay="200"
-                className="text-[18px] text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] mb-2 "
-              >
-                The Wedding Day
-              </p>
-              <div className="flex items-center">
-                <p
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  className="text-2xl z-10 sm:text-4xl md:text-5xl whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
-                >
-                  ព្រុំ​ សុផេង
-                </p>
-                <div data-aos="fade-up" data-aos-delay="200" id="heart"></div>
-                <p
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  className="text-2xl sm:text-4xl md:text-5xl whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
-                >
-                  សាន មុន្នីវណ្ណ
-                </p>
+            <div className="">
+              <div className="flex mb-[30px] items-center justify-between w-full">
+                <div className="flex gap-[10px] w-full relative flex-col items-center">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    className="text-sm w-full  text-left  z-10  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                  >
+                    <span>លោក</span> ឃាល​ ណុច
+                  </p>
+
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    className="text-sm w-full  text-left flex-1  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                  >
+                    <span>អ្នកស្រី</span> ស៊ីវ ចាន់មូលី
+                  </p>
+                </div>
+                <div className="flex w-full gap-[10px] flex-col relative  items-center">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    className="text-sm z-10 opacity-0 pointer-events-none  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                  >
+                    សដសដថ
+                  </p>
+
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    className="text-sm w-full  text-right  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                  >
+                    <span>អ្នកស្រី</span> ហ៊ា រ៉ាវី
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex mb-[10px] w-full relative gap-[90px] items-center">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    className="text-sm flex-1 z-10 sm:text-4xl md:text-5xl whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                  >
+                    កូនកំលោះ
+                  </p>
+
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    className="text-sm flex-1 text-right  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                  >
+                    ​កូន​ក្រមុំ
+                  </p>
+                </div>
+                <div className="flex w-full relative gap-[90px] items-center">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    className="text-md z-10 sm:text-4xl md:text-5xl whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                  >
+                    ព្រុំ​ សុផេង
+                  </p>
+                  <div className="absolute left-1/2 -translate-1/2 top-[0px]">
+                    <div
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                      id="heart"
+                    ></div>
+                  </div>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    className="text-md sm:text-4xl md:text-5xl whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                  >
+                    សាន មុន្នីវណ្ណ
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col z-10 gap-[5px] items-center space-y-2">
-              <p className="text-[12px ] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-gold-light font-medium tracking-[0.2em] mb-1">
+              <p className="text-[12px ] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-amber-200 font-medium tracking-[0.2em] mb-1">
                 SAVE THE DATE
               </p>
               <h3 className="text-[14px]  drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-white font-nokora drop-shadow-lg">
@@ -120,7 +176,7 @@ const Step2 = () => {
                 className="flex flex-col text-center
                items-center gap-[5px] mb-[10px]"
               >
-                <MapPin size={25} className="text-[#fad6a5]  " />
+                <MapPin size={25} className="text-amber-200 mb-[3px]  " />
                 <p className="w-[80%] text-[12px] text-white">
                   នៅ​​{" "}
                   <span className="text-amber-200 text-[14px]">
@@ -133,11 +189,11 @@ const Step2 = () => {
             </div>
           </div>
           <div className="mt-[30px]  flex flex-col  text-center">
-            <div>យើងមានកិត្តិយសសូមគោរពអញ្ជើញ</div>
+            <div className="text-[#295e97] ">យើងមានកិត្តិយសសូមគោរពអញ្ជើញ</div>
             <div className="w-[150px] mt-[10px] mx-auto">
               <Image src={decorLine} className="" />
             </div>
-            <p className="text-center mt-[20px] text-[14px]">
+            <p className="text-center text-[#295e97] mt-[20px] text-[14px]">
               ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
               អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស
               ដើម្បីប្រសិទ្ធិពរជ័យសិរីសួស្តី ជ័យមង្គល ក្នុងពិធីអាពាហ៍ពិពាហ៍
@@ -147,20 +203,52 @@ const Step2 = () => {
               <div>
                 <Image src={waiting} className="w-[250px]" />
               </div>
-              <p className="text-[#ce8c30] whitespace-nowrap text-[12px] absolute left-1/2 top-[40%] -translate-x-[50%]">
+              <p className="text-[#ce8c30] whitespace-nowrap mt-[1px] text-[13px] absolute left-1/2 top-[40%] -translate-x-[50%]">
                 យើងខ្ញុំកំពុងរងចាំថ្ងៃពិសេស
               </p>
             </div>
+
             <Countdown />
+
             <Gallery />
+            <div className="mt-[20px] border border-[#295e97] pt-[10px] bg-[#ffffff75] rounded-[10px]">
+              {/* Header Title */}
+              <h2 className="text-lg sm:text-xl text-center whitespace-nowrap text-[#295e97] font-moulpali py-2 leading-relaxed">
+                Our Love Story
+              </h2>
+              <div className="w-[150px]  mx-auto">
+                <Image src={decorLine} className="" />
+              </div>
+              {/* Main Message */}
+              <p className="text-center mt-[10px] text-sm  leading-loose font-moulpali text-[#295e97] text-base  px-4 mb-12">
+                It was a chilly November 2018, when Sopheng first laid eyes on
+                Monivann at the library. Monivann was sitting at a table, when
+                their eyes met. Sopheng was immediately drawn to Monivann’s warm
+                smile while Monivann was captivated by Sopheng's determination
+                and kindness. As the days turned into weeks, Sopheng and
+                Monivann found themselves spending more and more time together,
+                studying and laughing late into the night. Their relationship
+                blossomed into something more, and by May 2025, Sopheng knew
+                that Monivann was the one. With efforts and commitments, Sopheng
+                proposed to meet Monivann’s family as a significant step,
+                traditional gesture that show respect and intention. Sopheng and
+                Monivann were so grateful for the agreement from their both
+                families and they felt truly ready to start their new life
+                together. Now, as they plan their future together, Sopheng and
+                Monivann are filled with excitement and anticipation for the
+                life they will build as husband and wife.
+              </p>
+            </div>
           </div>
           <div className="mt-[50px] w-full">
-            <p className="text-center">កម្មវិធីមង្គលអាពាហ៍ពិពាហ៍</p>
+            <p className="text-center text-[18px] text-[#295e97]">
+              កម្មវិធីមង្គលអាពាហ៍ពិពាហ៍
+            </p>
             <div className="w-[150px] mt-[10px] mx-auto">
               <Image src={decorLine} className="" />
             </div>
             <div
-              className=" main1 rounded-[20px] rounded-b-none overflow-hidden mt-[20px] relative py-[20px] justify-between items-center flex flex-col w-full"
+              className=" main1 rounded-[20px] overflow-hidden mt-[20px] relative py-[20px] justify-between items-center flex flex-col w-full"
               style={{
                 backgroundPosition: "center",
                 backgroundSize: "cover",
@@ -185,7 +273,7 @@ const Step2 = () => {
                     </p>
                     <div className="mt-[10px]">
                       <p className="text-sm mt-[10px] font-nokora text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-                        កម្មវិធីថ្ងៃទី
+                        ថ្ងៃទី
                         <span className="text-amber-200 text-[20px]">
                           {" "}
                           28
@@ -207,7 +295,7 @@ const Step2 = () => {
                             <p className="text-sm drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] whitespace-nowrap text-amber-200 font-medium opacity-100">
                               ម៉ោង {ev.date} :
                             </p>
-                            <p className="text-sm drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-white font-medium opacity-100">
+                            <p className="text-sm leading-[2] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-white font-medium opacity-100">
                               {ev.name}
                             </p>
                           </div>
@@ -217,7 +305,7 @@ const Step2 = () => {
                     <div className="mt-[20px]">
                       <p className="text-sm mt-[10px] font-nokora text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                         <p className="text-sm mt-[10px] font-nokora text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-                          កម្មវិធីថ្ងៃទី
+                          ថ្ងៃទី
                           <span className="text-amber-200 text-[20px]">
                             {" "}
                             01
@@ -240,7 +328,7 @@ const Step2 = () => {
                             <p className="text-sm whitespace-nowrap text-amber-200 font-medium opacity-100">
                               ម៉ោង {ev.date} :
                             </p>
-                            <p className="text-sm text-white font-medium opacity-100">
+                            <p className="text-sm leading-[2] text-white font-medium opacity-100">
                               {ev.name}
                             </p>
                           </div>
@@ -273,6 +361,10 @@ const Step2 = () => {
                       ភូមិត្រពាំងថ្មត្បូង ឃុំប៉ោយចារ ស្រុកភ្នំស្រុក
                       ខេត្តបន្ទាយមានជ័យ​
                     </p>
+                    <Image
+                      src={location}
+                      className="overflow-hidden rounded-[10px] mt-[10px]"
+                    />
                   </div>
                 </div>
 
@@ -303,6 +395,34 @@ const Step2 = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="p-4 md:p-8">
+            {/* Header Title */}
+            <h2 className="text-lg sm:text-xl text-center whitespace-nowrap text-[#295e97] font-moulpali py-2 leading-relaxed">
+              ចំណងដៃអាពាហ៍ពិពាហ៍
+            </h2>
+            <div className="w-[150px]  mx-auto">
+              <Image src={decorLine} className="" />
+            </div>
+            {/* Main Message */}
+            <Image
+              className="rounded-[20px] overflow-hidden w-[70%] mx-auto mt-[10px]"
+              src={aba}
+            />
+          </div>
+          <div className="p-4 md:p-8">
+            {/* Header Title */}
+            <h2 className="text-lg sm:text-xl text-center whitespace-nowrap text-[#295e97] font-moulpali py-2 leading-relaxed">
+              សូមថ្លែងអំណរអរគុណ
+            </h2>
+            <div className="w-[150px]  mx-auto">
+              <Image src={decorLine} className="" />
+            </div>
+            {/* Main Message */}
+            <p className="text-center text-sm py-[20px] leading-loose font-moulpali text-[#295e97] text-base  px-4 mb-12">
+              វត្តមានឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
+              ជាកិត្តិយសដ៏ឧត្តុង្គឧត្តម ចំពោះគ្រួសាររបស់យើងខ្ញុំ។
+            </p>
           </div>
         </div>
       </div>

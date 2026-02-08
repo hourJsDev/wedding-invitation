@@ -53,7 +53,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate = "2026-03-15" }) => {
           className={`flex flex-col  w-[25%] gap-[10px] items-center`}
           key={k}
         >
-          <span className="w-full rounded-[10px] flex justify-center items-center text-white aspect-square bg-[#b29969]">
+          <span className="w-full text-2xl rounded-[10px] flex justify-center items-center text-white aspect-square bg-[#b29969]">
             {timeLeft[k]}
           </span>
           <span className="text-[13px] text-[#ebbd46]">{localization[k]}</span>
