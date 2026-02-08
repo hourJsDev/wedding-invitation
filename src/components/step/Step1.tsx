@@ -84,12 +84,7 @@ const Step1 = ({ setStep }: { setStep: (value: number) => void }) => {
         <div data-aos="fade-up" data-aos-delay="800">
           <Image src={NameCard} className="w-[450px]" />
         </div>
-        <p
-          data-aos-offset="300"
-          data-aos="fade-right"
-          data-aos-delay="1400"
-          className="text-white whitespace-nowrap drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-[14px] absolute left-1/2 top-[40%] -translate-x-[50%]"
-        >
+        <p className="text-white whitespace-nowrap drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-[14px] absolute left-1/2 top-[40%] -translate-x-[50%]">
           {guest}
         </p>
       </div>
