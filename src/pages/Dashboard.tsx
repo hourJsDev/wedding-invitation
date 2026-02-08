@@ -1,4 +1,5 @@
-import React, { useEffect, useState, ChangeEvent } from "react";
+import React, { useState, useEffect } from "react";
+import type { ChangeEvent } from "react";
 import { base64Encode } from "../utils/helper";
 import { CheckCircle, Copy } from "lucide-react";
 
