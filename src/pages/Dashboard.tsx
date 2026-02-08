@@ -25,7 +25,7 @@ const Dashboard: React.FC = () => {
 
 👉🏼សូមចូលទៅកាន់ Link ខាងក្រោមដើម្បីបើកលិខិតអញ្ជើញ ( Digital Wedding Invitation)៖ 
 
-[${window.location.origin + "/?uuid=" + uuid}]
+${window.location.origin + "/?uuid=" + uuid}
 `;
     navigator.clipboard.writeText(text);
   };

@@ -80,8 +80,12 @@ const Step1 = ({ setStep }: { setStep: (value: number) => void }) => {
       >
         សូមគោរពអញ្ជើញ
       </p>
-      <div className="relative z-10 mt-[70px] mb-[50px]">
-        <div data-aos="fade-up" data-aos-delay="800">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="800"
+        className="relative z-10 mt-[70px] mb-[50px]"
+      >
+        <div>
           <Image src={NameCard} className="w-[450px]" />
         </div>
         <p className="text-white whitespace-nowrap drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-[14px] absolute left-1/2 top-[40%] -translate-x-[50%]">
