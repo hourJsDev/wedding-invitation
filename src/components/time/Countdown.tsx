@@ -11,7 +11,7 @@ interface TimeLeft {
   second: number;
 }
 
-const Countdown: React.FC<CountdownProps> = ({ targetDate = "2026-03-15" }) => {
+const Countdown: React.FC<CountdownProps> = ({ targetDate = "2026-02-28" }) => {
   const calculateTimeLeft = (): TimeLeft => {
     // Note: subtracting dates in TS requires Coercing to number
     const difference = new Date(targetDate).getTime() - new Date().getTime();

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Dashboard from "./pages/Dashboard";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,16 +14,10 @@ const router = createBrowserRouter([
         index: true, // This makes Home the default at "/"
         element: <Home />,
       },
-      // {
-      //   path: "project",
-      //   element: <ProjectLayout />,
-      //   children: [
-      //     {
-      //       path: ":id",
-      //       element: <ProjectDetail />,
-      //     },
-      //   ],
-      // },
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
     ],
   },
 ]);

@@ -17,6 +17,9 @@ body {
 #root {
   overflow: hidden;
 }
+.font-fam-normal {
+  font-family: sans-serif !important;
+}
 .custom-font {
   font-family: sans-serif !important;
 }

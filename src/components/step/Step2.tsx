@@ -6,7 +6,12 @@ import waiting from "../../assets/waiting.png";
 import Image from "../image/Image";
 import Countdown from "../time/Countdown";
 import Gallery from "../image/Gallery";
+import { useState } from "react";
+import { loveStory } from "../../db/loveStory";
+import cambodia from "../../assets/cambodia.png";
+import en from "../../assets/en.png";
 const Step2 = () => {
+  const [language, setLanguage] = useState(1);
   const event = {
     day1: [
       {
@@ -53,6 +58,7 @@ const Step2 = () => {
       },
     ],
   };
+
   return (
     <div
       className="h-[100dvh] pb-[20px] px-[20px]  relative flex flex-col items-center mx-auto max-w-[1200px]"
@@ -99,12 +105,8 @@ const Step2 = () => {
                   </p>
                 </div>
                 <div className="flex w-full gap-[10px] flex-col relative  items-center">
-                  <p
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                    className="text-sm z-10 opacity-0 pointer-events-none  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
-                  >
-                    សដសដថ
+                  <p className="text-sm z-10 opacity-0 pointer-events-none  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                    none
                   </p>
 
                   <p
@@ -160,24 +162,21 @@ const Step2 = () => {
               </div>
             </div>
             <div className="flex flex-col z-10 gap-[5px] items-center space-y-2">
-              <p className="text-[12px ] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-amber-200 font-medium tracking-[0.2em] mb-1">
-                SAVE THE DATE
-              </p>
               <h3 className="text-[14px]  drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-white font-nokora drop-shadow-lg">
-                ថ្ងៃចន្ទ ទី១៩ ខែមករា ឆ្នាំ២០២៦
+                ថ្ងៃសៅរ៍ ទី២៨ ខែកុម្ភះ ឆ្នាំ២០២៦
               </h3>
               <p className="text-[14px]  drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-white font-nokora drop-shadow-md">
-                ម៉ោង ០២ : ០០ ល្ងាច
+                ម៉ោង ០៤ : ៣០ ល្ងាច
               </p>
               <p className="text-[14px]   drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-white/80 font-serif">
-                19 . 01 . 2026 | 2:00 PM
+                28 . 02 . 2026 | 4:00 PM
               </p>
               <div
                 className="flex flex-col text-center
                items-center gap-[5px] mb-[10px]"
               >
                 <MapPin size={25} className="text-amber-200 mb-[3px]  " />
-                <p className="w-[80%] text-[12px] text-white">
+                <p className="w-[80%] leading-[2] text-[12px] text-white">
                   នៅ​​{" "}
                   <span className="text-amber-200 text-[14px]">
                     ភោជនីយដ្ខាន​ រស្មីក្លាន់សៀប
@@ -211,32 +210,36 @@ const Step2 = () => {
             <Countdown />
 
             <Gallery />
-            <div className="mt-[20px] border border-[#295e97] pt-[10px] bg-[#ffffff75] rounded-[10px]">
+            <h2 className="text-lg mt-[20px] sm:text-xl text-center whitespace-nowrap text-[#295e97] font-moulpali py-2 leading-relaxed">
+              {
+                loveStory.title?.[
+                  language.toString() as keyof typeof loveStory.description
+                ]
+              }
+            </h2>
+            <div className="w-[150px]  mx-auto">
+              <Image src={decorLine} className="" />
+            </div>
+            <div className="mt-[20px] relative border border-[#295e97] pt-[30px] bg-[#ffffff75] rounded-[10px]">
               {/* Header Title */}
-              <h2 className="text-lg sm:text-xl text-center whitespace-nowrap text-[#295e97] font-moulpali py-2 leading-relaxed">
-                Our Love Story
-              </h2>
-              <div className="w-[150px]  mx-auto">
-                <Image src={decorLine} className="" />
+
+              <div
+                onClick={() => setLanguage(language === 1 ? 2 : 1)}
+                className="absolute right-[10px] top-[10px]"
+              >
+                <Image
+                  className="w-[40px]"
+                  src={language === 1 ? cambodia : en}
+                />{" "}
               </div>
+
               {/* Main Message */}
-              <p className="text-center mt-[10px] text-sm  leading-loose font-moulpali text-[#295e97] text-base  px-4 mb-12">
-                It was a chilly November 2018, when Sopheng first laid eyes on
-                Monivann at the library. Monivann was sitting at a table, when
-                their eyes met. Sopheng was immediately drawn to Monivann’s warm
-                smile while Monivann was captivated by Sopheng's determination
-                and kindness. As the days turned into weeks, Sopheng and
-                Monivann found themselves spending more and more time together,
-                studying and laughing late into the night. Their relationship
-                blossomed into something more, and by May 2025, Sopheng knew
-                that Monivann was the one. With efforts and commitments, Sopheng
-                proposed to meet Monivann’s family as a significant step,
-                traditional gesture that show respect and intention. Sopheng and
-                Monivann were so grateful for the agreement from their both
-                families and they felt truly ready to start their new life
-                together. Now, as they plan their future together, Sopheng and
-                Monivann are filled with excitement and anticipation for the
-                life they will build as husband and wife.
+              <p className="text-center font-fam-normal mt-[10px] text-sm  leading-loose font-moulpali text-[#295e97] text-base  px-4 mb-12">
+                {
+                  loveStory.description?.[
+                    language.toString() as keyof typeof loveStory.description
+                  ]
+                }
               </p>
             </div>
           </div>
