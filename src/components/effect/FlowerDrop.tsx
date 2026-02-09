@@ -99,8 +99,8 @@ const FlowerDrop: React.FC = () => {
         const div = document.createElement('div');
         
         Object.assign(div.style, {
-          width: '25px',
-          height: '25px',
+          width: '10px',
+          height: '10px',
           position: 'absolute',
           backgroundImage: `url(${src})`,
           backgroundSize: '100% 100%',
