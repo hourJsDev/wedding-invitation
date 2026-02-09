@@ -10,6 +10,7 @@ import { useState } from "react";
 import { loveStory } from "../../db/loveStory";
 import cambodia from "../../assets/cambodia.png";
 import en from "../../assets/en.png";
+import FlowerDrop from "../effect/FlowerDrop";
 const Step2 = () => {
   const [language, setLanguage] = useState(1);
   const event = {
@@ -64,6 +65,7 @@ const Step2 = () => {
       className="h-[100dvh] pb-[20px] px-[20px]  relative flex flex-col items-center mx-auto max-w-[1200px]"
       //   style={{ background: `url("https://i.pinimg.com/736x/b1/a7/8e/b1a78e93b7116d049ff53dd986db57a2.jpg")`, backgroundPosition: "center", backgroundSize: "cover" }}
     >
+      <FlowerDrop/>
       <div
         data-aos="fade-up"
         className="rounded-[20px] overflow-y-auto bg-transparent backdrop:blur-lg flex-col w-full "
