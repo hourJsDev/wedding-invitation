@@ -70,7 +70,7 @@ const Step2 = () => {
       >
         <div className="overflow-y-auto  items-center flex flex-col">
           <div
-            className="h-[80dvh] main2 rounded-[20px] rounded-b-none overflow-hidden mt-[20px] relative py-[20px] justify-between items-center flex flex-col w-full"
+            className="h-[85dvh] main2 rounded-[20px] rounded-b-none overflow-hidden mt-[20px] relative py-[20px] justify-between items-center flex flex-col w-full"
             style={{
               backgroundPosition: "center",
               backgroundSize: "cover",
@@ -91,7 +91,7 @@ const Step2 = () => {
                   <p
                     data-aos="fade-up"
                     data-aos-delay="200"
-                    className="text-sm w-full  text-left  z-10  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+                    className="text-sm w-full text-left  z-10  whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
                   >
                     <span>លោក</span> ឃាល​ ណុច
                   </p>
@@ -118,7 +118,7 @@ const Step2 = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex translate-y-[70px] flex-col items-center">
                 <div className="flex mb-[10px] w-full relative gap-[90px] items-center">
                   <p
                     data-aos="fade-up"
@@ -142,7 +142,7 @@ const Step2 = () => {
                     data-aos-delay="200"
                     className="text-md z-10 sm:text-4xl md:text-5xl whitespace-nowrap font-freehand text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
                   >
-                    ព្រុំ​ សុផេង
+                    ព្រំ​ សុផេង
                   </p>
                   <div className="absolute left-1/2 -translate-1/2 top-[0px]">
                     <div
@@ -169,7 +169,7 @@ const Step2 = () => {
                 ម៉ោង ០៤ : ៣០ ល្ងាច
               </p>
               <p className="text-[14px]   drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] text-white/80 font-serif">
-                28 . 02 . 2026 | 4:00 PM
+                28 . 02 . 2026 | 4:30 PM
               </p>
               <div
                 className="flex flex-col text-center
@@ -179,7 +179,7 @@ const Step2 = () => {
                 <p className="w-[80%] leading-[2] text-[12px] text-white">
                   នៅ​​{" "}
                   <span className="text-amber-200 text-[14px]">
-                    ភោជនីយដ្ខាន​ រស្មីក្លាន់សៀប
+                    ភោជនីយដ្ឋាន​ រស្មីក្លាន់សៀប
                   </span>{" "}
                   ភូមិត្រពាំងថ្មត្បូង ឃុំប៉ោយចារ ស្រុកភ្នំស្រុក
                   ខេត្តបន្ទាយមានជ័យ​
@@ -188,11 +188,11 @@ const Step2 = () => {
             </div>
           </div>
           <div className="mt-[30px]  flex flex-col  text-center">
-            <div className="text-[#295e97] ">យើងមានកិត្តិយសសូមគោរពអញ្ជើញ</div>
+            <div className="text-[#7f5b02] ">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</div>
             <div className="w-[150px] mt-[10px] mx-auto">
               <Image src={decorLine} className="" />
             </div>
-            <p className="text-center text-[#295e97] mt-[20px] text-[14px]">
+            <p className="text-center text-[#7f5b02] mt-[20px] text-[14px]">
               ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
               អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស
               ដើម្បីប្រសិទ្ធិពរជ័យសិរីសួស្តី ជ័យមង្គល ក្នុងពិធីអាពាហ៍ពិពាហ៍
@@ -210,7 +210,7 @@ const Step2 = () => {
             <Countdown />
 
             <Gallery />
-            <h2 className="text-lg mt-[20px] sm:text-xl text-center whitespace-nowrap text-[#295e97] font-moulpali py-2 leading-relaxed">
+            <h2 className="text-lg mt-[20px] sm:text-xl text-center whitespace-nowrap text-[#7f5b02] font-moulpali py-2 leading-relaxed">
               {
                 loveStory.title?.[
                   language.toString() as keyof typeof loveStory.description
@@ -220,7 +220,7 @@ const Step2 = () => {
             <div className="w-[150px]  mx-auto">
               <Image src={decorLine} className="" />
             </div>
-            <div className="mt-[20px] relative border border-[#295e97] pt-[30px] bg-[#ffffff75] rounded-[10px]">
+            <div className="mt-[20px] relative border border-[#7f5b02] pt-[30px] bg-[#ffffff75] rounded-[10px]">
               {/* Header Title */}
 
               <div
@@ -234,7 +234,7 @@ const Step2 = () => {
               </div>
 
               {/* Main Message */}
-              <p className="text-center font-fam-normal mt-[10px] text-sm  leading-loose font-moulpali text-[#295e97] text-base  px-4 mb-12">
+              <p className="text-center font-fam-normal mt-[10px] text-sm  leading-loose font-moulpali text-[#7f5b02] text-base  px-4 mb-12">
                 {
                   loveStory.description?.[
                     language.toString() as keyof typeof loveStory.description
@@ -244,7 +244,7 @@ const Step2 = () => {
             </div>
           </div>
           <div className="mt-[50px] w-full">
-            <p className="text-center text-[18px] text-[#295e97]">
+            <p className="text-center text-[18px] text-[#7f5b02]">
               កម្មវិធីមង្គលអាពាហ៍ពិពាហ៍
             </p>
             <div className="w-[150px] mt-[10px] mx-auto">
@@ -343,7 +343,7 @@ const Step2 = () => {
 
                 {/* Location Section */}
                 <div
-                  className="flex items-start gap-4 sm:gap-6"
+                  className="flex mt-[70px] items-start gap-4 sm:gap-6"
                   style={{ opacity: 1, transform: "none" }}
                 >
                   <div className="p-3 rounded-2xl bg-[linear-gradient(215deg,#D7BB83_0%,#A38C5E_100%)] border border-white/20 shadow-sm backdrop-blur-sm">
@@ -401,7 +401,7 @@ const Step2 = () => {
           </div>
           <div className="p-4 md:p-8">
             {/* Header Title */}
-            <h2 className="text-lg sm:text-xl text-center whitespace-nowrap text-[#295e97] font-moulpali py-2 leading-relaxed">
+            <h2 className="text-lg sm:text-xl text-center whitespace-nowrap text-[#7f5b02] font-moulpali py-2 leading-relaxed">
               ចំណងដៃអាពាហ៍ពិពាហ៍
             </h2>
             <div className="w-[150px]  mx-auto">
@@ -415,14 +415,14 @@ const Step2 = () => {
           </div>
           <div className="p-4 md:p-8">
             {/* Header Title */}
-            <h2 className="text-lg sm:text-xl text-center whitespace-nowrap text-[#295e97] font-moulpali py-2 leading-relaxed">
+            <h2 className="text-lg sm:text-xl text-center whitespace-nowrap text-[#7f5b02] font-moulpali py-2 leading-relaxed">
               សូមថ្លែងអំណរអរគុណ
             </h2>
             <div className="w-[150px]  mx-auto">
               <Image src={decorLine} className="" />
             </div>
             {/* Main Message */}
-            <p className="text-center text-sm py-[20px] leading-loose font-moulpali text-[#295e97] text-base  px-4 mb-12">
+            <p className="text-center text-sm py-[20px] leading-loose font-moulpali text-[#7f5b02] text-base  px-4 mb-12">
               វត្តមានឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា
               ជាកិត្តិយសដ៏ឧត្តុង្គឧត្តម ចំពោះគ្រួសាររបស់យើងខ្ញុំ។
             </p>

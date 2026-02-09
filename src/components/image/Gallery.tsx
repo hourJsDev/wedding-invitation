@@ -36,16 +36,15 @@ const Gallery = () => {
     [outfit11, outfit12, outfit13, outfit14, outfit15],
     [outfit24, outfit21, outfit22, outfit23, outfit25],
     [outfit31, outfit32, outfit33, outfit34, outfit35],
-    [outfit41, outfit42, outfit43, outfit44, outfit45],
-    [outfit51, outfit52, outfit53, outfit54, outfit55],
+    [outfit41, outfit42, outfit43, outfit44, outfit45 , outfit51, outfit52, outfit53, outfit54, outfit55],
   ];
   const handleSelectOutfit = (index: number) => {
     setOpen(index + 1);
   };
   return (
     <div className="mt-[20px] ">
-      <div className="text-[#295e97] text-[18px]">
-        កំរងរូបភាពអាពាហ៍ពិពាហ៍របស់យើង
+      <div className="text-[#7f5b02] text-[18px]">
+        កម្រងរូបភាពអាពាហ៍ពិពាហ៍របស់យើង
       </div>
       <div className="w-[150px] mt-[10px] mx-auto">
         <Image src={decorLine} className="" />
@@ -75,8 +74,8 @@ const Gallery = () => {
           </SheetHeader>
           <div className="grid grid-cols-1 mt-[20px] gap-[10px]">
             {!!outfits[open - 1] &&
-              outfits[open - 1].map((outfit) => (
-                <div className="rounded-[10px] relative overflow-hidden">
+              outfits[open - 1].map((outfit,index) => (
+                <div key={index} className="rounded-[10px] relative overflow-hidden">
                   <ImageSkeleton src={outfit} />
                 </div>
               ))}
